@@ -1,0 +1,92 @@
+/* T³o przycisków */
+#play {
+    -fx-background-image: url("../res/play.png");
+}
+ 
+#prev {
+    -fx-background-image: url("../res/prev.png");
+}
+ 
+#next {
+    -fx-background-image: url("../res/next.png");
+}
+ 
+.button,
+.toggle-button {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 70% 70%; 
+    -fx-background-color: transparent;
+    -fx-opacity: 40%;
+}
+ 
+/* Przyciski po najechaniu */
+.button:hover,
+.toggle-button:hover,
+.toggle-button:selected {
+    -fx-opacity: 100%;
+}
+
+
+/* t³o tabeli */
+.table-view,
+.table-view .column-header-background,
+.table-view .column-header-background .nested-column-header .table-column,
+.table-view .column-header-background .filler,
+.table-view .column-header-background .show-hide-columns-button {
+    -fx-background-color: transparent;
+}
+ 
+/* efekty do nag³ówka tabeli */
+.table-view .column-header .label {
+    -fx-text-fill: #1d1d1d;
+    -fx-font-weight: bold;
+}
+ 
+.table-view .column-header {
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #1d1d1d;
+    -fx-border-insets: 0px 30px 1px 0px;
+}
+ 
+/* t³o komórki */
+.table-view .table-row-cell {
+    -fx-background-color: #1d1d1d;
+}
+ 
+/* kolor tekstu komórek */
+.table-view:row-selection .virtual-flow .clipped-container .sheet .table-row-cell:filled .table-column:filled {
+    -fx-text-fill: #f0f0f0;
+}
+ 
+/* kolor komórki po najechaniu i klikniêciu */
+.table-view:row-selection .virtual-flow .clipped-container .sheet .table-row-cell:filled:hover,
+.table-view:row-selection .virtual-flow .clipped-container .sheet .table-row-cell:filled:selected {
+    -fx-background-color: #81b71a;
+}
+ 
+/* kolor ramki komórki */
+.table-view:row-selection:constrained-resize .virtual-flow .clipped-container .sheet .table-row-cell:filled .table-column:filled {
+    -fx-border-color: transparent;
+}
+ 
+/* scroll - ukrycie */
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:vertical,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:vertical .track,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:vertical .thumb,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:vertical .decrement-button, 
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:vertical .decrement-button .decrement-arrow,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:vertical .increment-button, 
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:vertical .increment-button .increment-arrow,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:horizontal,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:horizontal .track,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:horizontal .thumb,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:horizontal .decrement-button, 
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:horizontal .decrement-button .decrement-arrow,
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:horizontal .increment-button, 
+.table-view:row-selection:constrained-resize .virtual-flow .scroll-bar:horizontal .increment-button .increment-arrow,
+.table-view:row-selection:constrained-resize .virtual-flow .corner {
+    -fx-blend-mode: darken;
+}
+
+
